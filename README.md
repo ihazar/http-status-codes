@@ -2,7 +2,14 @@
 
 Constants enumerating the HTTP status codes. Based on the [Java Apache HttpStatus API](http://hc.apache.org/httpclient-3.x/apidocs/org/apache/commons/httpclient/HttpStatus.html).
 
-All status codes defined in RFC1945 (HTTP/1.0), RFC2616 (HTTP/1.1), RFC2518 (WebDAV), RFC6585 (Additional HTTP Status Codes), and RFC7538 (Permanent Redirect) are supported.
+All status codes defined in the following RFCs are supported:
+* RFC1945 (HTTP/1.0)
+* RFC2616 (HTTP/1.1)
+* RFC7231 (HTTP/1.1: Semantics and Content)
+* RFC2518 (WebDAV)
+* RFC6585 (Additional HTTP Status Codes)
+* RFC7538 (Permanent Redirect)
+* RFC8297 (An HTTP Status Code for Indicating Hints)
 
 TypeScript or JavaScript. Completely library agnostic. No dependencies.
 
@@ -46,6 +53,7 @@ response
 | 100  | CONTINUE                        | Continue                        |
 | 101  | SWITCHING_PROTOCOLS             | Switching Protocols             |
 | 102  | PROCESSING                      | Processing                      |
+| 103  | EARLY_HINTS                     | Early Hints                     |
 | 200  | OK                              | OK                              |
 | 201  | CREATED                         | Created                         |
 | 202  | ACCEPTED                        | Accepted                        |
@@ -87,6 +95,7 @@ response
 | 422  | UNPROCESSABLE_ENTITY            | Unprocessable Entity            |
 | 423  | LOCKED                          | Locked                          |
 | 424  | FAILED_DEPENDENCY               | Failed Dependency               |
+| 426  | UPGRADE_REQUIRED                | Upgrade Required                |
 | 428  | PRECONDITION_REQUIRED           | Precondition Required           |
 | 429  | TOO_MANY_REQUESTS               | Too Many Requests               |
 | 431  | REQUEST_HEADER_FIELDS_TOO_LARGE | Request Header Fields Too Large |
